@@ -3,17 +3,26 @@ A birdhouse that records the birds lifehood using RaspberryPI
 
 ## Install 
 
+### Prepare the PI
+```bash
+apt update
+apt install ffmpeg
+apt install raspistill
+apt install raspivid
+```
+
+### Install Code Dependencies
 ```bash
 npm install
 ```
 
-## Execute inside the RaspberryPII
+### Execute inside the RaspberryPII
 ```bash
 ./start-video-recording.sh &
 npm start
 ```
 
-## To run on boot
+### To run on boot
 ```bash
 ```
 
