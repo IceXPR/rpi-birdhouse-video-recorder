@@ -16,14 +16,21 @@ apt install raspivid
 npm install
 ```
 
-### Execute inside the RaspberryPII
+### Execute inside the RaspberryPI
+Start the node web application
 ```bash
-./start-video-recording.sh &
 npm start
 ```
 
+In your computer open the browser pointing to the raspberry pi and use port 8080
+
+For example: http://mybirdhouse:8080/
+
+
 ### To run on boot
 ```bash
+npm install pm2 -g
+pm2 start --name=BIRDHOUSE npm -- start
 ```
 
 
