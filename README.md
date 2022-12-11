@@ -29,8 +29,13 @@ For example: http://mybirdhouse:8080/
 
 ### To run on boot
 ```bash
-npm install pm2 -g
+sudo npm install pm2 -g
+pm2 startup systemd
+```
+Follow the instruction to install the script
+```
 pm2 start --name=BIRDHOUSE npm -- start
+pm2 save
 ```
 
 
