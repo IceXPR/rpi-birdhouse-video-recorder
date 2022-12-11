@@ -43,6 +43,8 @@ pm2 save
 
 
 ## References
+- https://coderrocketfuel.com/article/how-to-run-a-npm-start-script-with-pm2
+- https://www.tecmint.com/enable-pm2-to-auto-start-node-js-app/
 - http://frozen.ca/streaming-raw-h-264-from-a-raspberry-pi/
 ```
 raspivid -n -ih -t 0 -rot 0 -w 1280 -h 720 -fps 15 -b 1000000 -o - | nc -lkv4 5001
@@ -51,3 +53,5 @@ raspivid -n -ih -t 0 -rot 0 -w 1280 -h 720 -fps 15 -b 1000000 -o - | nc -lkv4 50
 - https://fullstack.network/streaming-video-from-raspberrypi-to-the-network-using-node-js-33a5b6b78c3d
 
 - https://linuxize.com/post/how-to-install-node-js-on-raspberry-pi/
+- https://stackfame.com/list-all-files-in-a-directory-nodejs#:~:text=Steps%20to%20get%20list%20of%20all%20the%20files,of%20files%20list%20from%20the%20directory.%20More%20items
+- https://stackoverflow.com/questions/26802201/bash-get-date-and-time-from-another-time-zone
