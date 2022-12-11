@@ -1,24 +1,27 @@
-.video_name {
+.videoNameClass {
   color: black;
   padding: 2px;
   width: 200px;
 }
 
+#videoPlayerDiv {
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#photosList {
+  left: 520px;
+  position: absolute;
+}
+
+.birdPhotoClass {
+  width: 100px;
+  margin: 2px;
+}
+
+
 video {
-  padding: 5px;
-}
-
-.flex-parent-element {
-  display: flex;
-  width: 50%;
-}
-
-.flex-child-element {
-  flex: 1;
-  /* border: 2px solid blueviolet; */
-  margin: 10px;
-}
-
-.flex-child-element:first-child {
-  margin-right: 20px;
+  padding: 10px;
 }

@@ -22,4 +22,17 @@ app.get('/api/v1.0/videos', (req, res) => {
 
 });
 
+app.get('/api/v1.0/photos', (req, res) => {
+  
+  const directoryPath = path.join(__dirname, 'public', 'bird-photos');
+  fs.readdir(directoryPath, function (err, files) {
+    if (err) {
+      console.debug('Unable to scan directory: ' + err);
+      res.json({ 'error': 'Unable to scan directory' }).status(400);
+    }
+    res.json({ 'photos': files }).status(200)
+  });
+
+});
+
 app.listen(8080)
