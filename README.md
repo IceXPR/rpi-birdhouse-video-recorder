@@ -1,8 +1,24 @@
-# rpi-birdhouse-video-stream
-A birdhouse for video streaming using RaspberryPI
+# rpi-birdhouse-video-recorder
+A birdhouse that records the birds lifehood using RaspberryPI
+
+## Install 
+
+```bash
+npm install
+```
+
+## Execute inside the RaspberryPII
+```bash
+./start-video-recording.sh &
+npm start
+```
+
+## To run on boot
+```bash
+```
 
 
-## Reference
+## References
 - http://frozen.ca/streaming-raw-h-264-from-a-raspberry-pi/
 ```
 raspivid -n -ih -t 0 -rot 0 -w 1280 -h 720 -fps 15 -b 1000000 -o - | nc -lkv4 5001
