@@ -1,9 +1,10 @@
 
+const cp = require("child_process");
+cp.exec("start-video-recording.sh"); // notice this without a callback..
 
 const fs = require('fs')
 const path = require('path');
 const express = require('express')
-
 const app = express()
 
 app.use(express.static('public'))
