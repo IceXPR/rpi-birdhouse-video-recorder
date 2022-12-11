@@ -1,3 +1,13 @@
+#headerDiv {
+width: 400px;
+height: 100px;
+position: fixed;
+}
+
+#birdhouseImage {
+  float: left;
+}
+
 .videoNameClass {
   color: black;
   padding: 2px;
@@ -7,13 +17,14 @@
 #videoPlayerDiv {
   float: left;
   position: fixed;
-  top: 0px;
+  top: 100px;
   left: 0px;
 }
 
 #photosList {
   left: 520px;
   position: absolute;
+  top: 110px;
 }
 
 .birdPhotoClass {
