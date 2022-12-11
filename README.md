@@ -1,5 +1,8 @@
+![](images/birdhouse.png)
 # rpi-birdhouse-video-recorder
 A birdhouse that records the birds lifehood using RaspberryPI
+
+![](images/sample-ux.png)
 
 ## Install 
 
