@@ -5,11 +5,20 @@ $(function () {
     data: {},
     success: function (result) {
       for (let video of result.videos) {
-        $("#videosDiv")
-          .append('<video width="560" controls><source src="bird-videos/' + video + '" type="video/mp4"></source>')
-          .append('<div><span class="video_name">' + video + '</span></div>')
+        $("#videosList")
+          .append('<div class="video_name"><span>' + video + '</span></div>')
+          .on("click", playVideo(video))
       }
     }
   });
-
 });
+
+function playVideo(video) {
+  return function () {
+    $("#videoSource").attr('src', 'bird-videos/' + video);
+    var videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.pause()
+    videoPlayer.load();
+    videoPlayer.play();
+  };
+}
