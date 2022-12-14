@@ -27,7 +27,17 @@ app.get('/api/v1.0/videos', (req, res) => {
       console.debug('Unable to scan directory: ' + err);
       res.json({ 'error': 'Unable to scan directory' }).status(400);
     }
-    res.json({ 'videos': files }).status(200)
+    sortedFiles = files.map(function (fileName) {
+      return {
+        name: fileName,
+        time: fs.statSync(directoryPath + '/' + fileName).mtime.getTime()
+      };
+    })
+    .sort(function (a, b) {
+      return b.time - a.time; })
+    .map(function (v) {
+      return v.name; });
+    res.json({ 'videos': sortedFiles }).status(200)
   });
 
 });
@@ -41,7 +51,17 @@ app.get('/api/v1.0/photos', (req, res) => {
       console.debug('Unable to scan directory: ' + err);
       res.json({ 'error': 'Unable to scan directory' }).status(400);
     }
-    res.json({ 'photos': files }).status(200)
+    sortedFiles = files.map(function (fileName) {
+      return {
+        name: fileName,
+        time: fs.statSync(directoryPath + '/' + fileName).mtime.getTime()
+      };
+    })
+    .sort(function (a, b) {
+      return b.time - a.time; })
+    .map(function (v) {
+      return v.name; });
+    res.json({ 'photos': sortedFiles }).status(200)
   });
 
 });
