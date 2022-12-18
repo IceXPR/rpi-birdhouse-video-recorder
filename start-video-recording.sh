@@ -10,5 +10,4 @@ do
 
  raspivid -o video.h264 -t 59000
  MP4Box -add video.h264 public/bird-videos/bird-video-`date +%H%M`.mp4
- rm video.h264
 done
