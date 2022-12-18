@@ -9,9 +9,9 @@ A birdhouse that records the birds lifehood using RaspberryPI
 ### Prepare the PI
 ```bash
 apt update
-apt install ffmpeg
 apt install raspistill
 apt install raspivid
+apt install gpac
 ```
 
 ### Install Code Dependencies
