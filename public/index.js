@@ -6,7 +6,7 @@ $(function () {
     success: function (result) {
       for (let photo of result.photos) {
           $("#photosList")
-          .append('<image class="birdPhotoClass" src="bird-photos/'+ photo + '"/>')
+          .append('<image class="birdPhotoClass" src="bird-photos/'+ photo + '" title="' + photo + '"/>')
       }
 
       $(".birdPhotoClass").on("click", function(event) {
