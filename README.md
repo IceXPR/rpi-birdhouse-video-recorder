@@ -56,4 +56,5 @@ raspivid -n -ih -t 0 -rot 0 -w 1280 -h 720 -fps 15 -b 1000000 -o - | nc -lkv4 50
 - https://stackfame.com/list-all-files-in-a-directory-nodejs#:~:text=Steps%20to%20get%20list%20of%20all%20the%20files,of%20files%20list%20from%20the%20directory.%20More%20items
 - https://stackoverflow.com/questions/26802201/bash-get-date-and-time-from-another-time-zone
 - https://raspi.tv/2013/another-way-to-convert-raspberry-pi-camera-h264-output-to-mp4
+- https://lindevs.com/turn-off-built-in-leds-on-raspberry-pi/#:~:text=Raspberry%20Pi%20has%20a%20configuration%20file%20%2Fboot%2Fconfig.txt%20which,built-in%20LEDs%20on%20Raspberry%20Pi%20when%20it%20boots%3A
   
